@@ -1,0 +1,641 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div>
+    <div class="top-line">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        <span><i class="fa fa-phone"></i>1234 - 5678 - 9012</span>
+                        <span><i class="fa fa-envelope-o"></i>support@flatbuild.com</span>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- home-section ================================================== -->
+    <section id="home-section" class="slider1">
+
+    <!--
+    #################################
+        - THEMEPUNCH BANNER -
+    #################################
+    -->
+    <div class="tp-banner-container">
+    <div class="tp-banner" >
+    <ul>	<!-- SLIDE  -->
+    <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"  data-title="Intro Slide">
+        <!-- MAIN IMAGE -->
+        <img src="{{ STATIC_PREFIX }}upload/slide/1.jpg"  alt="slidebg1" data-lazyload="{{ STATIC_PREFIX }}upload/slide/1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+        <!-- LAYERS -->
+
+        <!-- LAYER NR. 1 -->
+        <div class="tp-caption finewide_medium_white lfl tp-resizeme rs-parallaxlevel-0"
+             data-x="30"
+             data-y="140"
+             data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="500"
+             data-start="1200"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.1"
+             data-endelementdelay="0.1"
+             style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">WE BUILD Great <br><span>Projects</span> <br>
+        </div>
+
+        <!-- LAYER NR. 2 -->
+        <div class="tp-caption small_text customin tp-resizeme rs-parallaxlevel-0"
+             data-x="30"
+             data-y="260"
+             data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="500"
+             data-start="1800"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.05"
+             data-endelementdelay="0.1"
+             style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </div>
+
+        <!-- LAYER NR. 3 -->
+        <div class="tp-caption lfl tp-resizeme rs-parallaxlevel-0"
+             data-x="30"
+             data-y="370"
+             data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="500"
+             data-start="2400"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.1"
+             data-endelementdelay="0.1"
+             data-linktoslide="next"
+             style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='trans-btn'>load more</a>
+        </div>
+
+        <!-- LAYER NR. 4 -->
+        <div class="tp-caption lfr tp-resizeme rs-parallaxlevel-0"
+             data-x="230"
+             data-y="370"
+             data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="500"
+             data-start="2500"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.1"
+             data-endelementdelay="0.1"
+             data-linktoslide="next"
+             style="z-index: 11; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='trans-btn2'>Portfolio</a>
+        </div>
+
+    </li>
+
+    <!-- SLIDE  -->
+    <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-saveperformance="on"  data-title="Ken Burns Slide">
+        <!-- MAIN IMAGE -->
+        <img src="{{ STATIC_PREFIX }}images/dummy.png"  alt="2" data-lazyload="{{ STATIC_PREFIX }}upload/slide/2.jpg" data-bgposition="right top" data-kenburns="on" data-duration="12000" data-ease="Power0.easeInOut" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center bottom">
+        <!-- LAYERS -->
+
+        <!-- LAYER NR. 1 -->
+        <div class="tp-caption small_text customin tp-resizeme rs-parallaxlevel-0"
+             data-x="470"
+             data-y="190"
+             data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="500"
+             data-start="1200"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.05"
+             data-endelementdelay="0.1"
+             style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">We are experience company
+        </div>
+
+        <!-- LAYER NR. 2 -->
+        <div class="tp-caption finewide_medium_white lfl tp-resizeme rs-parallaxlevel-0"
+             data-x="160"
+             data-y="238"
+             data-speed="500"
+             data-start="1800"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.05"
+             data-endelementdelay="0.05"
+             style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">All You Need for building
+        </div>
+
+        <!-- LAYER NR. 3 -->
+        <div class="tp-caption finewide_medium_white lfr tp-resizeme rs-parallaxlevel-0"
+             data-x="185"
+             data-y="292"
+             data-speed="500"
+             data-start="1800"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.1"
+             data-endelementdelay="0.1"
+             style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;"><span>Creative &amp; Professional </span>
+        </div>
+
+        <!-- LAYER NR. 4 -->
+        <div class="tp-caption lfb tp-resizeme rs-parallaxlevel-0"
+             data-x="470"
+             data-y="385"
+             data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="500"
+             data-start="2400"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.1"
+             data-endelementdelay="0.1"
+             data-linktoslide="next"
+             style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='trans-btn'>View Projects</a>
+        </div>
+    </li>
+    <!-- SLIDE  -->
+    <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"  data-title="Parallax 3D">
+        <!-- MAIN IMAGE -->
+        <img src="{{ STATIC_PREFIX }}upload/slide/3.jpg"  alt="3dbg" data-lazyload="{{ STATIC_PREFIX }}upload/slide/3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+        <!-- LAYERS -->
+
+        <!-- LAYER NR. 1 -->
+        <div class="tp-caption finewide_medium_white lfl tp-resizeme rs-parallaxlevel-0"
+             data-x="30"
+             data-y="140"
+             data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="500"
+             data-start="1200"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.1"
+             data-endelementdelay="0.1"
+             style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;"><span>Great</span> Buildings<br>
+        </div>
+
+        <!-- LAYER NR. 2 -->
+        <div class="tp-caption small_text customin tp-resizeme rs-parallaxlevel-0 backgroun-col"
+             data-x="30"
+             data-y="210"
+             data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="500"
+             data-start="1800"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.05"
+             data-endelementdelay="0.1"
+             style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <br>
+            nostrud exercitation ullamco laboris nisi ut aliquip commodo.
+        </div>
+
+        <!-- LAYER NR. 3 -->
+        <div class="tp-caption lfl tp-resizeme rs-parallaxlevel-0"
+             data-x="30"
+             data-y="350"
+             data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="500"
+             data-start="2400"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.1"
+             data-endelementdelay="0.1"
+             data-linktoslide="next"
+             style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='trans-btn'>load more</a>
+        </div>
+
+        <!-- LAYER NR. 4 -->
+        <div class="tp-caption lfr tp-resizeme rs-parallaxlevel-0"
+             data-x="230"
+             data-y="350"
+             data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="500"
+             data-start="2500"
+             data-easing="Power3.easeInOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.1"
+             data-endelementdelay="0.1"
+             data-linktoslide="next"
+             style="z-index: 11; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='trans-btn2'>Projects</a>
+        </div>
+    </li>
+    </ul>
+    <div class="tp-bannertimer"></div>
+    </div>
+    </div>
+    </section>
+    <!-- End home section -->
+
+    <!-- banner-section ================================================== -->
+    <section class="banner-section">
+        <div class="container">
+            <h2>All You Need for building Creative &amp; Professional<a href="projects.html" class="button-one">click here</a></h2>
+        </div>
+    </section>
+    <!-- End banner section -->
+
+    <!-- services-offer
+        ================================================== -->
+    <section class="services-offer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="offer-post">
+                        <a href="services.html"><img src="{{ STATIC_PREFIX }}upload/others/con22.jpg" alt=""></a>
+                        <h2><a href="services.html">Electrical</a></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="offer-post">
+                        <a href="services.html"><img src="{{ STATIC_PREFIX }}upload/others/con2.jpg" alt=""></a>
+                        <h2><a href="services.html">Home Maintenance</a></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="offer-post">
+                        <a href="services.html"><img src="{{ STATIC_PREFIX }}upload/others/con3.jpg" alt=""></a>
+                        <h2><a href="services.html">Project Buildings</a></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End services-offer section -->
+
+    <!-- projects
+        ================================================== -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="project-title">
+                <h2>Our - Latest Projects</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <ul class="filter">
+                <li><a class="active" href="#" data-filter="*">Show All</a></li>
+                <li><a href="#" data-filter=".buildings">Buildings</a></li>
+                <li><a href="#" data-filter=".interior">Interior</a></li>
+                <li><a href="#" data-filter=".energy">Energy</a></li>
+                <li><a href="#" data-filter=".isolation">Isolation</a></li>
+            </ul>
+            <div class="project-box iso-call">
+                <div class="project-post buildings isolation">
+                    <img src="{{ STATIC_PREFIX }}upload/projects/1.jpg" alt="">
+                    <div class="hover-box">
+                        <h2><a href="single-project.html">Elegant Building</a></h2>
+                        <span>bulding, house</span>
+                    </div>
+                </div>
+                <div class="project-post interior">
+                    <img src="{{ STATIC_PREFIX }}upload/projects/2.jpg" alt="">
+                    <div class="hover-box">
+                        <h2><a href="single-project.html">Beatiful House</a></h2>
+                        <span>bulding, house</span>
+                    </div>
+                </div>
+                <div class="project-post buildings isolation">
+                    <img src="{{ STATIC_PREFIX }}upload/projects/3.jpg" alt="">
+                    <div class="hover-box">
+                        <h2><a href="single-project.html">Classic House</a></h2>
+                        <span>bulding, house</span>
+                    </div>
+                </div>
+                <div class="project-post buildings">
+                    <img src="{{ STATIC_PREFIX }}upload/projects/4.jpg" alt="">
+                    <div class="hover-box">
+                        <h2><a href="single-project.html">Modern and trending house</a></h2>
+                        <span>bulding, house</span>
+                    </div>
+                </div>
+                <div class="project-post interior isolation">
+                    <img src="{{ STATIC_PREFIX }}upload/projects/5.jpg" alt="">
+                    <div class="hover-box">
+                        <h2><a href="single-project.html">Afarist Building</a></h2>
+                        <span>bulding, house</span>
+                    </div>
+                </div>
+                <div class="project-post energy">
+                    <img src="{{ STATIC_PREFIX }}upload/projects/6.jpg" alt="">
+                    <div class="hover-box">
+                        <h2><a href="single-project.html">traditional Building</a></h2>
+                        <span>bulding, house</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End projects -->
+
+    <!-- about section
+        ================================================== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{{ STATIC_PREFIX }}upload/others/4.jpg" alt="">
+                    <h2>Who we are</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident.</p>
+                </div>
+                <div class="col-md-6">
+
+                    <!-- Nav tabs -->
+                    <div class="tab-posts-box">
+                        <ul class="nav nav-tabs" id="myTab">
+                            <li class="active">
+                                <a href="#option1" data-toggle="tab">Building</a>
+                            </li>
+                            <li>
+                                <a href="#option2" data-toggle="tab">Renovation</a>
+                            </li>
+                            <li>
+                                <a href="#option3" data-toggle="tab">Isolation</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="option1">
+                                <h3>Building</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                            </div>
+                            <div class="tab-pane" id="option2">
+                                <h3>Renovation</h3>
+                                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. ullamco laboris nisi ut aliquip.</p>
+                            </div>
+                            <div class="tab-pane" id="option3">
+                                <h3>Isolation</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-box">
+                        <div class="accord-elem active">
+                            <div class="accord-title">
+                                <a class="accord-link" href="#"></a>
+                                <h2>Vivamus vestibulum nulla nec ante.</h2>
+                            </div>
+                            <div class="accord-content">
+                                <p>Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. Praesent dapibus, neque id cursus faucibus, tortor neque.</p>
+                            </div>
+                        </div>
+
+                        <div class="accord-elem">
+                            <div class="accord-title">
+                                <a class="accord-link" href="#"></a>
+                                <h2>Morbi in sem quis dui placerat ornare. </h2>
+                            </div>
+                            <div class="accord-content">
+                                <p>Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. Praesent dapibus, neque id cursus faucibus, tortor neque.</p>
+                            </div>
+                        </div>
+
+                        <div class="accord-elem">
+                            <div class="accord-title">
+                                <a class="accord-link" href="#"></a>
+                                <h2>Lorem ipsum dolor sit amet. </h2>
+                            </div>
+                            <div class="accord-content">
+                                <p>Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. Praesent dapibus, neque id cursus faucibus, tortor neque.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End about section -->
+
+    <!-- testimonial-section
+        ================================================== -->
+    <section class="testimonial-section">
+        <div class="container">
+
+            <div class="title-section">
+                <h1>Clients <span>Testimonials</span></h1>
+            </div>
+
+            <div class="testimonial-box">
+                <ul class="bxslider">
+                    <li>
+                        <h2>John Smith</h2>
+                        <span>flatbuild Chief</span>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. <br> Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a,<br> ultricies in, diam. Sed arcu. Cras consequat.</p>
+                    </li>
+                    <li>
+                        <h2>Besim Dauti</h2>
+                        <span>Project Menager</span>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. <br> Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a,<br> ultricies in, diam. Sed arcu. Cras consequat.</p>
+                    </li>
+                    <li>
+                        <h2>Quan Ngyen</h2>
+                        <span>Electricity Engineer</span>
+                        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. <br> Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a,<br> ultricies in, diam. Sed arcu. Cras consequat.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <!-- End testimonial section -->
+
+    <!-- news-section
+        ================================================== -->
+    <section class="news-section">
+        <div class="container">
+            <div class="news-title">
+                <h2>Our - Latest News</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="news-box">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="news-post">
+                            <img src="{{ STATIC_PREFIX }}upload/others/ser1.jpg" alt="">
+                            <h2><a href="single-post.html">We construct buildings</a></h2>
+                            <span>22 Jannuary 2015</span>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur.</p>
+                            <a href="single-post.html">Continue Reading...</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-post">
+                            <img src="{{ STATIC_PREFIX }}upload/others/ser2.jpg" alt="">
+                            <h2><a href="single-post.html">We work on area</a></h2>
+                            <span>22 Jannuary 2015</span>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur.</p>
+                            <a href="single-post.html">Continue Reading...</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-post">
+                            <img src="{{ STATIC_PREFIX }}upload/others/ser3.jpg" alt="">
+                            <h2><a href="single-post.html">We build objects</a></h2>
+                            <span>22 Jannuary 2015</span>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur.</p>
+                            <a href="single-post.html">Continue Reading...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End news section -->
+
+    <!-- clients-section ================================================== -->
+    <section class="clients-section">
+        <div class="container">
+            <div class="clients-title">
+                <h2>Clients - Our Partners</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="client-list">
+                        <li>
+                            <a href="#"><img src="{{ STATIC_PREFIX }}images/clients/client1.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ STATIC_PREFIX }}images/clients/client2.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ STATIC_PREFIX }}images/clients/client3.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ STATIC_PREFIX }}images/clients/client4.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ STATIC_PREFIX }}images/clients/client5.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ STATIC_PREFIX }}images/clients/client6.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ STATIC_PREFIX }}images/clients/client1.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ STATIC_PREFIX }}images/clients/client2.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <blockquote>
+                        <p>There are some of <span>our partners</span> and <span>customers</span>, who are very satisfied with our work. <br>Do you want to be <span>next one</span> ?</p>
+                    </blockquote>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End clients section -->
+
+    <!-- free-quote section
+        ================================================== -->
+    <section class="free-quote-section">
+        <div class="container">
+            <div class="quote-title">
+                <h2>Do you plan to build or renovate ?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <form id="quote-form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <input name="first-name" id="first-name" type="text" placeholder="First Name">
+                        <input name="last-name" id="last-name" type="text" placeholder="Last Name">
+                        <input name="mail" id="mail" type="text" placeholder="Email">
+                        <input name="tel-number" id="tel-number" type="text" placeholder="Phone">
+                    </div>
+                    <div class="col-md-4">
+                        <select name="type">
+                            <option>type</option>
+                            <option>Home</option>
+                            <option>Kitchen</option>
+                            <option>Garden</option>
+                            <option>Electricy</option>
+                            <option>isolation</option>
+                        </select>
+                        <select name="budget">
+                            <option>Budget</option>
+                            <option value="$2000 - $5000">$2000 - $5000</option>
+                            <option value="$5000 - $10k">$5000 - $10k</option>
+                            <option value="$10k - $20k">$10k - $20k</option>
+                            <option value="$20k - $40k">$20k - $40k</option>
+                            <option value="$40k +">$40k + </option>
+                        </select>
+                        <select name="your-area">
+                            <option>Your Area</option>
+                            <option value="Huston">Huston</option>
+                            <option value="North Caroline">North Caroline</option>
+                            <option value="New york">New york</option>
+                            <option value="London">London</option>
+                            <option value="Berlin">Berlin </option>
+                        </select>
+                        <select name="time">
+                            <option>Time to be done</option>
+                            <option value="20 Days">20 Days</option>
+                            <option value="1 month">1 month</option>
+                            <option value="2 month">2 month</option>
+                            <option value="3 month">3 month</option>
+                            <option value="this year">this year </option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <textarea name="your-comment" id="your-comment" placeholder="Describe your project..."></textarea>
+                    </div>
+                </div>
+                <input type="submit" id="submit-quote" value="Send">
+                <div id="quote-msg" class="message"></div>
+            </form>
+        </div>
+    </section>
+    <!-- End free-quote section -->
+
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+
+{% endblock %}
