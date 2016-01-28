@@ -250,7 +250,7 @@
     <!-- banner-section ================================================== -->
     <section class="banner-section">
         <div class="container">
-            <h2>All You Need for building Creative &amp; Professional<a href="projects.html" class="button-one">click here</a></h2>
+            <h2>All You Need for building Creative &amp; Professional<a href="{% url 'projects' %}" class="button-one">click here</a></h2>
         </div>
     </section>
     <!-- End banner section -->
@@ -262,22 +262,22 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="offer-post">
-                        <a href="services.html"><img src="{{ STATIC_PREFIX }}upload/others/con22.jpg" alt=""></a>
-                        <h2><a href="services.html">Electrical</a></h2>
+                        <a href="{% url 'services' %}"><img src="{{ STATIC_PREFIX }}upload/others/con22.jpg" alt=""></a>
+                        <h2><a href="{% url 'services' %}">Electrical</a></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="offer-post">
-                        <a href="services.html"><img src="{{ STATIC_PREFIX }}upload/others/con2.jpg" alt=""></a>
-                        <h2><a href="services.html">Home Maintenance</a></h2>
+                        <a href="{% url 'services' %}"><img src="{{ STATIC_PREFIX }}upload/others/con2.jpg" alt=""></a>
+                        <h2><a href="{% url 'services' %}">Home Maintenance</a></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="offer-post">
-                        <a href="services.html"><img src="{{ STATIC_PREFIX }}upload/others/con3.jpg" alt=""></a>
-                        <h2><a href="services.html">Project Buildings</a></h2>
+                        <a href="{% url 'services' %}"><img src="{{ STATIC_PREFIX }}upload/others/con3.jpg" alt=""></a>
+                        <h2><a href="{% url 'services' %}">Project Buildings</a></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
@@ -307,42 +307,42 @@
                 <div class="project-post buildings isolation">
                     <img src="{{ STATIC_PREFIX }}upload/projects/1.jpg" alt="">
                     <div class="hover-box">
-                        <h2><a href="single-project.html">Elegant Building</a></h2>
+                        <h2><a href="{% url 'single_project' %}">Elegant Building</a></h2>
                         <span>bulding, house</span>
                     </div>
                 </div>
                 <div class="project-post interior">
                     <img src="{{ STATIC_PREFIX }}upload/projects/2.jpg" alt="">
                     <div class="hover-box">
-                        <h2><a href="single-project.html">Beatiful House</a></h2>
+                        <h2><a href="{% url 'single_project' %}">Beatiful House</a></h2>
                         <span>bulding, house</span>
                     </div>
                 </div>
                 <div class="project-post buildings isolation">
                     <img src="{{ STATIC_PREFIX }}upload/projects/3.jpg" alt="">
                     <div class="hover-box">
-                        <h2><a href="single-project.html">Classic House</a></h2>
+                        <h2><a href="{% url 'single_project' %}">Classic House</a></h2>
                         <span>bulding, house</span>
                     </div>
                 </div>
                 <div class="project-post buildings">
                     <img src="{{ STATIC_PREFIX }}upload/projects/4.jpg" alt="">
                     <div class="hover-box">
-                        <h2><a href="single-project.html">Modern and trending house</a></h2>
+                        <h2><a href="{% url 'single_project' %}">Modern and trending house</a></h2>
                         <span>bulding, house</span>
                     </div>
                 </div>
                 <div class="project-post interior isolation">
                     <img src="{{ STATIC_PREFIX }}upload/projects/5.jpg" alt="">
                     <div class="hover-box">
-                        <h2><a href="single-project.html">Afarist Building</a></h2>
+                        <h2><a href="{% url 'single_project' %}">Afarist Building</a></h2>
                         <span>bulding, house</span>
                     </div>
                 </div>
                 <div class="project-post energy">
                     <img src="{{ STATIC_PREFIX }}upload/projects/6.jpg" alt="">
                     <div class="hover-box">
-                        <h2><a href="single-project.html">traditional Building</a></h2>
+                        <h2><a href="{% url 'single_project' %}">traditional Building</a></h2>
                         <span>bulding, house</span>
                     </div>
                 </div>
@@ -486,31 +486,31 @@
                     <div class="col-md-4">
                         <div class="news-post">
                             <img src="{{ STATIC_PREFIX }}upload/others/ser1.jpg" alt="">
-                            <h2><a href="single-post.html">We construct buildings</a></h2>
+                            <h2><a href="single-post{% url 'single_post' %}">We construct buildings</a></h2>
                             <span>22 Jannuary 2015</span>
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla pariatur.</p>
-                            <a href="single-post.html">Continue Reading...</a>
+                            <a href="{% url 'single_post' %}">Continue Reading...</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="news-post">
                             <img src="{{ STATIC_PREFIX }}upload/others/ser2.jpg" alt="">
-                            <h2><a href="single-post.html">We work on area</a></h2>
+                            <h2><a href="{% url 'single_post' %}">We work on area</a></h2>
                             <span>22 Jannuary 2015</span>
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla pariatur.</p>
-                            <a href="single-post.html">Continue Reading...</a>
+                            <a href="{% url 'single_post' %}">Continue Reading...</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="news-post">
                             <img src="{{ STATIC_PREFIX }}upload/others/ser3.jpg" alt="">
-                            <h2><a href="single-post.html">We build objects</a></h2>
+                            <h2><a href="{% url 'single_post' %}">We build objects</a></h2>
                             <span>22 Jannuary 2015</span>
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla pariatur.</p>
-                            <a href="single-post.html">Continue Reading...</a>
+                            <a href="{% url 'single_post' %}">Continue Reading...</a>
                         </div>
                     </div>
                 </div>
