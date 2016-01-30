@@ -27,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/settings.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/style.css" media="screen">
 
+    {% block head %} {% endblock %}
+
 </head>
 
 <body>
@@ -37,7 +39,7 @@
     <!-- Header ================================================== -->
     <header class="clearfix">
         <div class="logo">
-            <a href="index.html"><img src="{{ STATIC_PREFIX }}images/logo.png" alt=""></a>
+            <a href="/"><img src="{{ STATIC_PREFIX }}images/logo.png" alt=""></a>
         </div>
 
         <a class="elemadded responsive-link" href="#">Menu</a>
@@ -47,28 +49,31 @@
                 <li class="drop"><a class="active" href="/">Home</a>
                     <ul class="dropdown">
                         <li><a href="/">Home 1</a></li>
-                        <li><a href="/">Home 2</a></li>
+                        <li><a href="{% url 'home2' %}">Home 2</a></li>
+                        <li><a href="{% url 'single_post' %}">Single Post</a></li>
+                        <li><a href="{% url '404_error' %}">Error</a></li>
                     </ul>
                 </li>
-                <li class="drop"><a href="projects.html">Projects</a>
+                <li class="drop"><a href="{% url 'projects' %}">Projects</a>
                     <ul class="dropdown">
-                        <li><a href="projects-2col.html">Projects 2 Colums</a></li>
-                        <li><a href="projects.html">Projects 3 Colums</a></li>
-                        <li><a href="single-project.html">Single Project</a></li>
+                        <li><a href="{% url 'projects2' %}">Projects 2 Colums</a></li>
+                        <li><a href="{% url 'projects' %}">Projects 3 Colums</a></li>
+                        <li><a href="{% url 'single_project' %}">Single Project</a></li>
                     </ul>
                 </li>
                 <li><a href="{% url 'about' %}">About</a></li>
-                <li class="drop"><a href="services.html">Our Services</a>
+                <li class="drop"><a href="{% url 'services' %}">Our Services</a>
                     <ul class="dropdown">
-                        <li><a href="construction.html">Construction</a></li>
-                        <li><a href="building.html">Building</a></li>
-                        <li><a href="isolation.html">Isolation</a></li>
-                        <li><a href="electricy.html">Electricy</a></li>
-                        <li><a href="painting.html">Painting</a></li>
-                        <li><a href="projecting.html">Projecting</a></li>
+                        <li><a href="{% url 'construction' %}">Construction</a></li>
+                        <li><a href="{% url 'building' %}">Building</a></li>
+                        <li><a href="{% url 'isolation' %}">Isolation</a></li>
+                        <li><a href="{% url 'electricy' %}">Electricy</a></li>
+                        <li><a href="{% url 'painting' %}">Painting</a></li>
+                        <li><a href="{% url 'projecting' %}">Projecting</a></li>
                     </ul>
                 </li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+
                 <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </nav>
@@ -85,7 +90,6 @@
     <!-- content
         ================================================== -->
     <div id="content">
-
         <div class="inner-content">
             {% block content %} {% endblock %}
 
